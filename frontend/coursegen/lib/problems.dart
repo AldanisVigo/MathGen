@@ -72,10 +72,12 @@ class ProblemsState extends State<Problems>{
   Future<void> initialize() async {
     try {
       List<Problem> problems = await _getProblems();
-      
-      setState((){
-        currentProblems = problems;
-      });
+
+      if(mounted){ // in case we dispose before getting problems is done.
+        setState((){
+          currentProblems = problems;
+        });
+      }
      
     }catch(error){
       if(kDebugMode){
