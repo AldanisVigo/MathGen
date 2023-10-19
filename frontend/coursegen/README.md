@@ -1,16 +1,3 @@
-# coursegen
+# CourseGen
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This application uses the OpenAI api to generate mathematics problems based on a subject and a topic within the subject. It allows the user to select a subject, and then a topic from within that subject and it will generate 10 random problems for that topic and display them. The user can then work through the problem and press on it when they want to reveal the answer. It is intended to be used as a study aid since sometimes the best way to get good at something is to solve lots of problems in that subject. This is the frontend section of the entire application, and there's a backend Node.js server that goes along with this frontend.
