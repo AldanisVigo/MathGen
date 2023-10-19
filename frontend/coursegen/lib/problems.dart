@@ -69,9 +69,25 @@ class ProblemsState extends State<Problems>{
     }
   }
 
+  Future<void> initialize() async {
+    try {
+      List<Problem> problems = await _getProblems();
+      
+      setState((){
+        currentProblems = problems;
+      });
+     
+    }catch(error){
+      if(kDebugMode){
+        print(error);
+      }
+    }
+  }
+
   @override
   void initState() {
     selectedTopic = widget.topics[0];
+    initialize();
     super.initState();
   }
 

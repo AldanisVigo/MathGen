@@ -1,4 +1,4 @@
-import 'package:coursegen/problems.dart';
+import 'package:coursegen/subjects.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,15 +12,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'MathGen',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.yellow),
         useMaterial3: true,
       ),
-      home: const Problems(course: "PreCalculus", topics: [
-        "precalc_identifying_and_evaluating_functions",
-        "precalc_domain_and_range_of_functions"
-      ])
+      home: Subjects()
+      // home: const Problems(course: "PreCalculus", topics: [
+      //   "precalc_identifying_and_evaluating_functions",
+      //   "precalc_domain_and_range_of_functions"
+      // ])
     );
   }
 }
