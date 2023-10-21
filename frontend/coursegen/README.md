@@ -1,3 +1,0 @@
-# CourseGen
-
-This application uses the OpenAI api to generate mathematics problems based on a subject and a topic within the subject. It allows the user to select a subject, and then a topic from within that subject and it will generate 10 random problems for that topic and display them. The user can then work through the problem and press on it when they want to reveal the answer. It is intended to be used as a study aid since sometimes the best way to get good at something is to solve lots of problems in that subject. This is the frontend section of the entire application, and there's a backend Node.js server that goes along with this frontend.
