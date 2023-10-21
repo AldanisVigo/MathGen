@@ -8,8 +8,7 @@ class Subjects extends StatelessWidget{
     "PreCalculus" : [
       "precalc_identifying_and_evaluating_functions",
       "precalc_domain_and_range_of_functions",
-      "graphs_of_piecewise_functions",
-      ""
+      "graphs_of_piecewise_functions"
     ]
   };
 
